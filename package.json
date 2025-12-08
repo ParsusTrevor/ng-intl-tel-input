@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run jshint && npm run karma",
     "build": "npm run concat && npm run uglify",
-    "start": "nohup http-server",
+    "start": "nohup http-server -p 8088",
     "jshint": "jshint .",
     "karma": "karma start karma.conf.js",
     "concat": "node ./node_modules/concat-cli/index.js -f ng-intl-tel-input.{module,provider,directive}.js -o dist/ng-intl-tel-input.js",
@@ -63,6 +63,6 @@
     "uglify": "^0.1.5"
   },
   "dependencies": {
-    "intl-tel-input": "~12.1.6"
+    "intl-tel-input": "^17.0.21"
   }
 }
