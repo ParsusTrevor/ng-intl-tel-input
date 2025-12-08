@@ -8,7 +8,7 @@ AngularJS 1.4.x module implementing intl-tel-input directive (https://github.com
 
 ### Initialization
 
-`ngIntlTelInputProvider` is available to set configs in the module config phase.
+`ngIntlTelInputProvider` is available to set configs in the module config phase. 
 
 ### Validation
 
