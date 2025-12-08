@@ -1,6 +1,6 @@
 # ng-intl-tel-input
 
-AngularJS 1.4.x module implementing intl-tel-input directive (https://github.com/Bluefieldscom/intl-tel-input)
+AngularJS 1.5.x module implementing intl-tel-input directive (https://github.com/Bluefieldscom/intl-tel-input)
 
 [![Build Status](https://travis-ci.org/hodgepodgers/ng-intl-tel-input.svg?branch=master)](https://travis-ci.org/hodgepodgers/ng-intl-tel-input)
 
@@ -26,6 +26,10 @@ http://hodgepodgers.github.io/ng-intl-tel-input/
 
 ### Installation
 
+**With NPM**
+
+`npm install ng-intl-tel-input --save`
+
 **With Bower**
 
 `bower install ng-intl-tel-input --save`
@@ -49,7 +53,7 @@ Configure defaults
 ```javascript
 angular.module('myApp')
   .config(function (ngIntlTelInputProvider) {
-    ngIntlTelInputProvider.set({defaultCountry: 'us'});
+    ngIntlTelInputProvider.set({initialCountry: 'us'});
   });
 ```
 
@@ -65,7 +69,7 @@ This attribute applies _intl-tel-input_ to a **text** field.
 
 **Note**
 
-* `type` is set to *text*
+* `type` is set to *text* or *tel*
 * `ng-model` is specified (required)
 
 #### data-default-country attribute
@@ -73,5 +77,5 @@ This attribute applies _intl-tel-input_ to a **text** field.
 This attribute allows run-time setting of the default country.
 
 ```html
-<input type="text" ng-model="model.tel" ng-intl-tel-input data-default-country="gb">
+<input type="text" ng-model="model.tel" ng-intl-tel-input data-initial-country="gb">
 ```
